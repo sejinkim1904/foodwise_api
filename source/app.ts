@@ -3,6 +3,7 @@ import cors from 'cors';
 import logging from './config/logging';
 import http from 'http';
 import config from './config/config';
+import healthCheckRouter from './routes/health';
 
 const app = express();
 const NAMESPACE = 'Server';
@@ -34,7 +35,7 @@ app.use((req, res, next) => {
 });
 
 // Routes
-
+app.use('/api/v1/healthcheck', healthCheckRouter);
 
 // Error handling
 app.use((_req, res, _next) => {
