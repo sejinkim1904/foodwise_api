@@ -3,9 +3,9 @@ import cors from 'cors';
 import logging from './config/logging';
 import http from 'http';
 import config from './config/config';
-import healthCheckRouter from './routes/health';
+import { healthCheckRouter } from './routes/health';
 
-const app = express();
+export const app = express();
 const NAMESPACE = 'Server';
 
 app.use(cors());
