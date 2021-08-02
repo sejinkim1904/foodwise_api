@@ -4,7 +4,7 @@
   "description": "",
   "main": "source/app.ts",
   "scripts": {
-    "build": "rm -rf build/ && prettier --write source/ && tsc",
+    "build": "rm -rf build/ && npx prettier --write source/ && tsc",
     "test": "jest --config ./jest.config.ts --forceExit --coverage --runInBand",
     "start": "nodemon source/app.ts"
   },
