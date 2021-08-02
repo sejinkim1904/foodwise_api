@@ -6,7 +6,8 @@
   "scripts": {
     "build": "rm -rf build/ && npx prettier --write source/ && tsc",
     "test": "jest --config ./jest.config.ts --forceExit --coverage --runInBand",
-    "start": "nodemon source/app.ts"
+    "start": "npx ts-node source/app.ts",
+    "start:dev": "nodemon source/app.ts"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +17,6 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "supertest": "^6.1.4",
-    "travis-ci": "^2.2.0",
     "ts-jest": "^27.0.4",
     "ts-node": "^10.1.0"
   },
