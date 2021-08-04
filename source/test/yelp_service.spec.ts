@@ -14,7 +14,7 @@ describe('Yelp service', () => {
     describe('getRandomRestaurant', () => {
         test('It returns a random restaurant', async () => {
             mockedAxios.get.mockResolvedValue({ data: yelpResponse });
-            const response = await getRandomRestaurant(80229);
+            const response = await getRandomRestaurant('80229');
             expect(response.name).toBe('Bonchon Central Park');
             expect(response.url).toBe(
                 'https://www.yelp.com/biz/bonchon-central-park-denver?adjust_creative=Gw2G3s-8y_nwhyQj-esq8Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Gw2G3s-8y_nwhyQj-esq8Q'
