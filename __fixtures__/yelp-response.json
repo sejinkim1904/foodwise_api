@@ -1,0 +1,54 @@
+{
+    "businesses": [
+        {
+            "id": "1fdeg3sOn4scKNd6I8mXsQ",
+            "alias": "bonchon-central-park-denver",
+            "name": "Bonchon Central Park",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/BFzQT5ZLh21c76Y1-T9XsA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/bonchon-central-park-denver?adjust_creative=Gw2G3s-8y_nwhyQj-esq8Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Gw2G3s-8y_nwhyQj-esq8Q",
+            "review_count": 294,
+            "categories": [
+                {
+                    "alias": "korean",
+                    "title": "Korean"
+                },
+                {
+                    "alias": "asianfusion",
+                    "title": "Asian Fusion"
+                },
+                {
+                    "alias": "chicken_wings",
+                    "title": "Chicken Wings"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 39.780834,
+                "longitude": -104.89122
+            },
+            "transactions": ["pickup", "delivery"],
+            "price": "$$",
+            "location": {
+                "address1": "8340 Northfield Blvd",
+                "address2": "Ste 1590",
+                "address3": "",
+                "city": "Denver",
+                "zip_code": "80238",
+                "country": "US",
+                "state": "CO",
+                "display_address": ["8340 Northfield Blvd", "Ste 1590", "Denver, CO 80238"]
+            },
+            "phone": "+13032483220",
+            "display_phone": "(303) 248-3220",
+            "distance": 8692.986063126966
+        }
+    ],
+    "total": 2,
+    "region": {
+        "center": {
+            "longitude": -104.94483947753906,
+            "latitude": 39.84728298490711
+        }
+    }
+}
