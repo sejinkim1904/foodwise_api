@@ -5,7 +5,7 @@
     "main": "source/app.ts",
     "scripts": {
         "build": "rm -rf build/ && npx prettier --write source/ && tsc",
-        "test": "jest --config ./jest.config.ts --forceExit --coverage --runInBand",
+        "test": "NODE_ENV=test jest --config ./jest.config.ts --forceExit --coverage --runInBand",
         "start": "npx ts-node source/app.ts",
         "start:dev": "nodemon source/app.ts"
     },
