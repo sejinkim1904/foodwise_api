@@ -16,3 +16,7 @@ export interface YelpBusinessLocation {
     country: string;
     state: string;
 }
+
+export interface NoResults extends Partial<YelpBusiness> {
+    error: string;
+}
