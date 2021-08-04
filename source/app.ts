@@ -4,8 +4,9 @@ import logging from './config/logging';
 import http from 'http';
 import config from './config/config';
 import { healthCheckRouter } from './routes/health';
+import { restaurantsRouter } from './routes/restaurants';
 
-export const app = express();
+const app = express();
 const NAMESPACE = 'Server';
 
 app.use(cors());
@@ -36,6 +37,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 
 // Routes
 app.use('/api/v1/healthcheck', healthCheckRouter);
+app.use('/api/v1/restaurants', restaurantsRouter);
 
 // Error handling
 app.use((_req: Request, res: Response, _next: NextFunction) => {
@@ -46,6 +48,8 @@ app.use((_req: Request, res: Response, _next: NextFunction) => {
     });
 });
 
-const httpServer = http.createServer(app);
+export const httpServer = http.createServer(app);
 
-httpServer.listen(config.server.port, () => logging.info(NAMESPACE, `Server is running ${config.server.hostname}:${config.server.port}`));
+if (process.env.NODE_ENV !== 'test') {
+    httpServer.listen(config.server.port, () => logging.info(NAMESPACE, `Server is running ${config.server.hostname}:${config.server.port}`));
+}
