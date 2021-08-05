@@ -4,7 +4,7 @@
 https://foodwise-api.herokuapp.com/api/v1/
 
 ## About the Project
-- Foodwise API was built for a coding challenge for Suite Studios
+- Foodwise API was built as a coding challenge for Suite Studios
 - The requirements were to build a simple API that does something cool
 - My girlfriend and I always have a hard time choosing what to eat so I built an API that takes a request with zip code, radius, and a category to return a random restaurant within the provided parameters
 - Foodwise only finds restaurants that are open at the time of the request
