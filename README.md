@@ -9,6 +9,11 @@ https://foodwise-api.herokuapp.com/api/v1/
 - My girlfriend and I always have a hard time choosing what to eat so I built an API that takes a request with zip code, radius, and a category to return a random restaurant within the provided parameters
 - Foodwise only finds restaurants that are open at the time of the request
 
+## Tech Stack
+* Express.js
+* Node.js
+* Jest
+* TypeScript
 
 ## Local Setup
   ### Instructions:
