@@ -16,8 +16,8 @@ https://foodwise-api.herokuapp.com/api/v1/
 2. Go to the directory with the new repo  
 3. Run `npm install`
 4. Create a `.env` file in the root directory set environment variables for:
-  - `YELP_BASE_URL`
-  - `YELP_API_KEY`
+  - `YELP_BASE_URL=''https://api.yelp.com/v3/businesses''`
+  - `YELP_API_KEY`: Create an API key on [Yelp API](https://www.yelp.com/developers/documentation/v3/authentication)
 5. To run the server: `npm start` or `npm run start:dev` to run with `nodemon`
   - Server runs on `localhost:1337`
   ### Run tests:
